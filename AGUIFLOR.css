@@ -1,0 +1,44 @@
+
+
+        .mainContainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 270px;
+            margin: 0 auto;
+            background-color: #59AC77;
+           
+
+        }
+
+        body{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+             padding-top: 190px;
+             background-image: url(https://media1.tenor.com/m/2Vmn_mUSpSwAAAAC/a-sweet-smile.gif);
+             background-repeat: no-repeat;
+             background-size: cover;
+        }
+        
+        .inputXbutton{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            
+        }
+
+        .button{
+           
+        font-size: 20px;
+        border: none;
+        background: transparent;
+
+        }
