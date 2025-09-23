@@ -90,9 +90,7 @@ html, body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.input-box input:hover {
-    background: linear-gradient(to right, #940f5285 0%, #f63796 100%);
-}
+
 .container .option{
   font-size: 14px;
   text-align: center;
