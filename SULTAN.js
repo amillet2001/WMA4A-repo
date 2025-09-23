@@ -21,7 +21,7 @@ eyeIcons.forEach((eyeIcon) => {
     if (pInput.type === "password") {
       eyeIcon.classList.replace("bx-hide", "bx-show");
       return (pInput.type = "text");
-    }
+    } 
     eyeIcon.classList.replace("bx-show", "bx-hide");
     pInput.type = "password";
   });
