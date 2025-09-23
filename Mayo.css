@@ -23,7 +23,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 10px;
-
+    padding: 50px;
+    position: relative;
 }
     .labels{
         font-family: monospace; 
@@ -35,10 +36,16 @@ body{
         font-family: monospace;
     }button{
         padding: 10px;
-        width: 40%;
+        width: 30%;
         align-self: center;
         border-radius: 15px;
         font-size: 0.9rem;
         font-family: monospace;
         cursor: pointer;
+        background-color: #eebbc3;
+        color: #232946;
+        border: 0px;
+        position: absolute;
+        bottom: 0px;
+        border: 2px solid #121629;
     }
