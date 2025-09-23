@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+       <link rel="stylesheet" type="text/css" href="../WMA4A-repo/style.css">
 </head>
 <body>
-    <div>
+    <div class ="container">
         <h1>Lain's Login page</h1>
         <h6>This is a real login page, you know?</h6>
-          <div>
-        <label>Name </label>
-        <input type="text" value="name" required> <br >
+          <div class ="input-container">
+        <label>Name</label>
+        <input type="text" placeholder="name" required>
         <label>Email</label>
-        <input type="text" value="password" required>
+        <input type="text" placeholder="password" required>
         </div>
-        <button type = "submit"> Login</button>
+        <button id = "js-button"type = "submit"> Login</button>
     </div>
+    <script src ="../WMA4A-repo/script.js"></script>
 </body>
 </html>
