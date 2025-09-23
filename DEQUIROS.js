@@ -1,0 +1,3 @@
+function setAlert() {
+  alert("login");
+}
