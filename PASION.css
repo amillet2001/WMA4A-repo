@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #a8dadc, #457b9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+body::before, body::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    width: 300px;
+    height: 300px;
+    top: -75px;
+    left: -75px;
+    animation: float 10s linear infinite;
+}
+
+body::after {
+    width: 200px;
+    height: 200px;
+    bottom: -75px;
+    right: -75px;
+    top: auto;
+    left: auto;
+    animation-duration: 15s;
+}
+
+.login-container {
+    background: #f1faee;
+    padding: 40px 50px; 
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    width: 500px; 
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #1d3557;
+    font-size: 2.5rem;
+    animation: slideDown 1s ease-in-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px; 
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #1d3557;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 15px; 
+    margin-bottom: 20px; 
+    font-size: 1.25rem;
+    border: 2px solid #a8dadc;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s all;
+}
+
+.login-container input:focus {
+    border-color: #457b9d;
+    box-shadow: 0 0 12px rgba(69,123,157,0.5);
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { box-shadow: 0 0 12px rgba(69,123,157,0.5); }
+    to { box-shadow: 0 0 22px rgba(69,123,157,0.8); }
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background: #457b9d;
+    border: none;
+    border-radius: 10px;
+    color: #f1faee;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.login-container button:hover {
+    background: #1d3557;
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
