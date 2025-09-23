@@ -54,3 +54,21 @@ button{
     height: 2rem;
     border: none;
 }
+
+img{
+    width: 20px;
+    cursor: pointer;
+    place-self: center;
+    align-self: center;
+}
+.password{
+    width: 95%;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
