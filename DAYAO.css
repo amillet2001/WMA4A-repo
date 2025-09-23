@@ -1,53 +1,34 @@
+/* ===== Light Theme (Default) ===== */
 :root {
-  --background: #f9fafb;    
-  --card: #ffffff;           
-  --foreground: #111827; 
-  --primary: #3b82f6;      
+  --background: #f9fafb;
+  --card: #ffffff;
+  --foreground: #111827;
+  --primary: #3b82f6;
   --primary-foreground: #ffffff;
-  --border: #e5e7eb;      
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111827;     
-    --card: #1f2937;           
-    --foreground: #f9fafb;     
-    --primary: #60a5fa;       
-    --primary-foreground: #111827; 
-    --border: #374151;       
-  }
+  --border: #e5e7eb;
 }
 
-.bg-background {
-  background-color: var(--background);
+/* ===== Dark Theme ===== */
+html.dark {
+  --background: #111827;
+  --card: #1f2937;
+  --foreground: #f9fafb;
+  --primary: #60a5fa;
+  --primary-foreground: #111827;
+  --border: #374151;
 }
 
-.bg-card {
-  background-color: var(--card);
-}
+/* Custom utility classes */
+.bg-background { background-color: var(--background); }
+.bg-card { background-color: var(--card); }
+.text-foreground { color: var(--foreground); }
+.bg-primary { background-color: var(--primary); }
+.text-primary-foreground { color: var(--primary-foreground); }
+.border-border { border-color: var(--border); }
 
-.text-foreground {
-  color: var(--foreground);
-}
+.bg-primary:hover { background-color: #2563eb; }
 
-.bg-primary {
-  background-color: var(--primary);
-}
-
-.text-primary-foreground {
-  color: var(--primary-foreground);
-}
-
-.border-border {
-  border-color: var(--border);
-}
-
-.bg-primary:hover {
-  background-color: #2563eb; 
-}
-
-
+/* Smooth transition */
 body, .bg-background, .bg-card, .text-foreground, .bg-primary, .border-border {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
 }
