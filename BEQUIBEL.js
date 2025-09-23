@@ -1,3 +1,3 @@
 function setAlert(){
-    alert("beng beng madafaka")
+    alert("LOGIN SUCCESSULLY")
 }
