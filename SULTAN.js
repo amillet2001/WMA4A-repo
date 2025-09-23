@@ -24,7 +24,7 @@ eyeIcons.forEach((eyeIcon) => {
     } 
     eyeIcon.classList.replace("bx-show", "bx-hide");
     pInput.type = "password";
-  });
+  }); 
 });
 // Password Validation
 function createPass() {
