@@ -1,3 +1,3 @@
 function setAlert() {
-  alert("Im allen");
+  alert("login");
 }
