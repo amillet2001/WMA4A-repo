@@ -1,0 +1,11 @@
+body{
+  background-color: aqua;
+}
+
+div{
+  background-color: chocolate;
+  margin: auto;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
